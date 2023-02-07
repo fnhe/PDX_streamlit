@@ -19,7 +19,6 @@ mut['m'] = mut['Tumor_Sample_Barcode'].str.split('_').str[1]
 mut = mut[mut['m'] == 'PDX'].fillna('NA')
 
 info = pd.read_table(indir + '/sample_info.txt')
-seq = pd.read_table(indir + '/pdx_dis.table.txt', header=[0,1], index_col = 0)
 
 st.title('Download curated table:')
 
