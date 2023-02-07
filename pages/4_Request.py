@@ -13,12 +13,12 @@ with st.form('PDX data request'):
 
 	col1, col2 = st.columns(2)
 	with col1:
-		fn = st.text_input("First Name")
-	with col2:
-		ln = st.text_input("Last Name")
+        fn = st.text_input("First Name")
+    with col2:
+        ln = st.text_input("Last Name")
 
-	col1, col2, col3 = st.columns(3)
-	with col2:
+    col1, col2, col3 = st.columns(3)
+    with col2:
         ins = st.text_input("Institution")
     with col3:
 		country = st.text_input("Country")
