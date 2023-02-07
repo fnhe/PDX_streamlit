@@ -92,7 +92,7 @@ else:
         info2show = pd.concat([info2show,c], axis = 1)
         info2show = info2show.fillna(np.nan)
 #info2show['Age(year)'] =[str(round(i,1)) for i in info2show['Age(year)']]
-info2show = info2show.fillna('N/A)
+info2show = info2show.fillna('N/A')
 info2show = info2show.reset_index()
 info2show.columns = ['PatientID', 'Cancer'] + list(info2show.columns[2:])
 st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel: '{:.1f}'}))
