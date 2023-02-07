@@ -7,7 +7,7 @@ receiver = 'lalalaxf93@gmail.com'
 
 
 
-form = st.form('PDX data request'):
+form = st.form('PDX data request')
 ids = form.text_area("Enter the PDX IDs you intereted")
 col1, col2 = form.columns(2)
 with col1:
