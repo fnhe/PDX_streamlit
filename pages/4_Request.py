@@ -55,4 +55,4 @@ with st.form('PDX data request'):
 		else:
 			st.warning('Please fill PDX IDs, Email, Institute and Name')
 
-st.help(st.form)
+st.form
