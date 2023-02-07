@@ -47,12 +47,12 @@ info = pd.read_table(indir + '/sample_info.txt')
 info_dict = dict(info[['PatientID', 'Disease Code level 1']].values)
 
 gene_ranking = sorted(exp.index)
-
+gene_sel = 'PDGFRA'
 gene_sel = st.selectbox(
     'Gene you interested',
     gene_ranking
 )
-#gene_sel = 'CTNNB1'
+
 info2plot = exp.loc[[gene_sel]].T
 info2plot['PatientID'] = info2plot.index.str.split('_').str[0]
 info2plot['Datatype'] = info2plot.index.str.split('_').str[1]
