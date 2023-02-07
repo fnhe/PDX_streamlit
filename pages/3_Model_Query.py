@@ -95,7 +95,7 @@ else:
 info2show = info2show.reset_index()
 info2show.columns = ['PatientID'] + list(info2show.columns[1:])
 st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel: '{:.1f}'}))
-st.text('Click the right top corner for the full view of the table')
+st.caption('_Click the right top corner for the full view of the table_')
 # Download
 csv = convert_df(info2show.fillna('NA'))
 st.download_button("Download", csv, "file.csv", "text/csv", key='download-csv')
