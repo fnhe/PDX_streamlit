@@ -106,5 +106,5 @@ st.pyplot(fig)
 # Download
 def convert_df(df):
     return df.to_csv(index=False).encode('utf-8')
-csv = convert_df(info2plot[['PatientID','Datatype',	'Cancer'] + gene_sel])
+csv = convert_df(info2plot)
 st.download_button("Download", csv, "exp.csv", "text/csv", key='download-csv')
