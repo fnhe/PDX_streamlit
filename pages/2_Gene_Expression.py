@@ -73,7 +73,7 @@ info_dict = dict(info[['PatientID', 'Disease Code level 1']].values)
 
 gene_ranking = sorted(exp.index)
 gene_sel = st.selectbox(
-    'Gene',
+    'Gene：',
     gene_ranking
 )
 

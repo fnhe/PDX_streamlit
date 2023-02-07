@@ -42,11 +42,11 @@ def check_wes_sample(data, col):
 cancer_ranking = sorted(info['Disease Code level 1'].unique() )
 gene_ranking = sorted(exp.index)
 ct_sel = st.multiselect(
-    'Cancer types',
+    'Cancer types：',
     cancer_ranking
 )
 gene_sel = st.selectbox(
-    'Gene',
+    'Gene：',
     gene_ranking
 )
 
@@ -92,10 +92,11 @@ else:
         info2show = pd.concat([info2show,c], axis = 1)
         info2show = info2show.fillna(np.nan)
 #info2show['Age(year)'] =[str(round(i,1)) for i in info2show['Age(year)']]
+info2show = info2show.fillna('N/A)
 info2show = info2show.reset_index()
-info2show.columns = ['PatientID'] + list(info2show.columns[1:])
+info2show.columns = ['PatientID', 'Cancer'] + list(info2show.columns[2:])
 st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel: '{:.1f}'}))
 st.caption('_Click the right top corner for the full view of the table_')
 # Download
-csv = convert_df(info2show.fillna('NA'))
+csv = convert_df(info2show)
 st.download_button("Download", csv, "file.csv", "text/csv", key='download-csv')

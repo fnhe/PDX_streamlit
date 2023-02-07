@@ -19,7 +19,7 @@ st.title('Data summary')
 
 info_sel = 'Cancer type'
 info_sel = st.selectbox(
-    'Clincal information you interested',
+    'Clincal information you interested:',
     ['Cancer type', 'Sex', 'Race', 'Ethnicity','Treatment']
 )
 
