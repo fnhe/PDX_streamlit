@@ -55,7 +55,7 @@ mut_col2show = ['Variant_Classification', 'HGVSp_Short']
 
 if len(ct_sel) == 0:
     a = info 
-    info2show = info2show[clinical_col2show].set_index('PatientID').fillna(np.nan)
+    info2show = a[clinical_col2show].set_index('PatientID').fillna(np.nan)
 else:
     info2show = pd.DataFrame()
     for ct in ct_sel:
