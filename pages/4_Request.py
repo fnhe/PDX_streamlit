@@ -1,10 +1,11 @@
 import streamlit as st
-import smtplib
+import email, smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.header import Header
 from email.mime.application import MIMEApplication
-def send_email(sender, password, receiver, smtp_server, smtp_port, email_message, subject):
+
+def send_email(sender, password, receiver, smtp_server, smtp_port, email_message, subject = 'Data request from streamlit'):
     message =  MIMEMultipart()
     message['To'] = Header(receiver)
     message['From'] = Header(sender)
@@ -50,7 +51,8 @@ with st.form('PDX data request'):
 		if email and ids and ins and fn:
 			st.success('Thank you for your inquiry! The email have been sented!')
 			message = submit_info
-			send_email(sender = 'lalalaxf93@gmail.com', password='hfl_1993', receiver='lalalaxf93@gmail.com', smtp_server = 'smtp.gmail.com', smtp_port = 587, email_message = message, subject = 'subject')
+			send_email(sender = 'lalalaxf93@gmail.com', password='hfl_1993', receiver='lalalaxf93@gmail.com', smtp_server = 'smtp.gmail.com', smtp_port = 587, email_message = message)
 		else:
 			st.warning('Please fill PDX IDs, Email, Institute and Name')
 
+st.help(st.form)
