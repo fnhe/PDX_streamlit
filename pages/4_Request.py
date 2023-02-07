@@ -19,9 +19,9 @@ with st.form('PDX data request'):
 
 	col1, col2, col3 = st.columns(3)
 	with col2:
-        ins = st.text_input("Institution")
+		ins = st.text_input("Institution")
 	with col3:
-        country = st.text_input("Country")
+		country = st.text_input("Country")
 	with col1:
         pos = st.selectbox("Your position", ['', 'Researcher','Professor','Student','Other'])
 
