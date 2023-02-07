@@ -51,7 +51,7 @@ with st.form('PDX data request'):
 		if email and ids and ins and fn:
 			st.success('Thank you for your inquiry! The email have been sented!')
 			message = submit_info
-			#send_email(sender = 'lalalaxf93@gmail.com', password='hfl_1993', receiver='lalalaxf93@gmail.com', smtp_server = 'smtp.gmail.com', smtp_port = 587, email_message = message)
+			send_email(sender = 'streamlit2fnhe@gmail.com', password='vvljquqzjrqleduy', receiver='lalalaxf93@gmail.com', smtp_server = 'smtp.gmail.com', smtp_port = 587, email_message = message)
 		else:
 			st.warning('Please fill PDX IDs, Email, Institute and Name')
 
