@@ -64,6 +64,7 @@ indir = './raw_data'
 exp = pd.read_table(indir + '/exp.tpm.txt', index_col = 0)
 exp = exp.drop('1853_PDX', axis = 1) 
 exp = exp.drop('1947_PDX', axis = 1) 
+exp = exp.round(2)
 
 exp.columns = exp.columns.str.replace('875194','1939-Dup',regex = True) 
 
