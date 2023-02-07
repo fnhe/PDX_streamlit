@@ -8,5 +8,5 @@ import seaborn as sns
 st.set_page_config(page_icon="🧊",
     layout="centered",
     initial_sidebar_state="expanded")
-st.title('Pediatric Solid Tumor PDX dataset')
+st.title('Pediatric Solid Tumor PDX Portal')
 

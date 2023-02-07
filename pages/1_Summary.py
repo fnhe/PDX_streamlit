@@ -15,7 +15,7 @@ import seaborn as sns
 
 indir = './raw_data'
 info = pd.read_table(indir + '/sample_info.txt')
-st.title('Data distribution')
+st.title('Data summary')
 
 info_sel = 'Cancer type'
 info_sel = st.selectbox(
