@@ -72,9 +72,8 @@ info = pd.read_table(indir + '/sample_info.txt')
 info_dict = dict(info[['PatientID', 'Disease Code level 1']].values)
 
 gene_ranking = sorted(exp.index)
-gene_sel = 'PDGFRA'
 gene_sel = st.selectbox(
-    'Gene you interested',
+    'Gene',
     gene_ranking
 )
 

@@ -42,11 +42,11 @@ def check_wes_sample(data, col):
 cancer_ranking = sorted(info['Disease Code level 1'].unique() )
 gene_ranking = sorted(exp.index)
 ct_sel = st.multiselect(
-    'Cancer types you interested',
+    'Cancer types',
     cancer_ranking
 )
 gene_sel = st.selectbox(
-    'Gene you interested',
+    'Gene',
     gene_ranking
 )
 
