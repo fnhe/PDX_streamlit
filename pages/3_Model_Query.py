@@ -20,7 +20,7 @@ mut = mut[mut['m'] == 'PDX'].fillna('NA')
 
 info = pd.read_table(indir + '/sample_info.txt')
 
-st.title('Download curated table:')
+#st.title('Download curated table:')
 
 
 
@@ -47,7 +47,7 @@ gene_sel = st.selectbox(
     gene_ranking
 )
 
-clinical_col2show = ['PatientID',  'Disease Code level 1', 'Disease Code level 2', 'Gender', 'Age(year)', 'Race', 'Ethnicity','Therapy prior to PDX collection', 
+clinical_col2show = ['PatientID',  'Disease Code level 2', 'Gender', 'Age(year)', 'Race', 'Ethnicity','Therapy prior to PDX collection', 
            'Tumor Collected (Primary or Met)', 'Primary Tumor Site', 'Site of Tumor Collection']
 mut_col2show = ['Variant_Classification', 'HGVSp_Short']
 
