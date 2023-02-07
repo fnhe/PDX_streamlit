@@ -1,0 +1,69 @@
+PatientID	Sample Sources	Gender	Age(year)	Race	Ethnicity	Engraftment time (weeks)	Therapy prior to PDX collection	Disease Code level 2	Disease Code level 1	Primary/Relapse Sample	Tumor Collected (Primary or Met)	Type of Germline	Primary Tumor Site	Primary Tumor Laterality	Site of Tumor Collection	Tumor Collection Laterality	Procedure Type	Tumorgraft morphology	Type
+29	UTSW	Female	4	Black or AA	Non-Hispanic		Chemotherapy	Wilms Tumor	Wilms Tumor	R	primary	saliva	Kidney, NOS	Right	Kidney, NOS	Right	Surgical resection		PT only
+54	UTSW	Male	10	White	Hispanic	11.0	Chemotherapy	ERMS	Other Sarcoma	P	primary	blood	Parotid gland	Left	Parotid gland	Left	Needle core biopsy		PT-PDX
+462	UTHSCSA	Female	5	White	Hispanic	27.5	No treatment	Medulloblastoma	Other Tumor	P	primary		Posterior fossa		Cerebellum		Surgical resection	Medulloblastoma, large cell/anaplastic	PDX only
+466	UTHSCSA	Female	2	White	Non-Hispanic	44.0	No treatment	Medulloblastoma	Other Tumor		metastatic	blood	Posterior fossa		Cerebellum		Surgical resection	High-grade primitive round cell tumor with focal suggestion of neuropil consistent with medulloblastoma	PDX only
+471	UTHSCSA	Male	12	White	Hispanic	19.0	Chemotherapy	Osteosarcoma	Osteosarcoma	P	primary	blood	Knee		Lymph node		Surgical resection	Osteoblastic osteosarcoma	PDX only
+494	UTHSCSA	Male	2	White	Hispanic	11.5	No treatment	Hepatoblastoma	Hepatoblastoma	P	primary	blood	Liver		Liver		Surgical resection	Hepatoblastoma, mostly embryonal and crowded fetal	PDX only
+498	UTSW	Female	1	White	Hispanic	11.0	No treatment	Hepatoblastoma	Hepatoblastoma	P	primary	blood	Liver		Liver		Surgical resection	Hepatoblastoma, crowded fetal, macrotrabecular, and mesenchymal	PT-PDX
+500	UTHSCSA	Male	13	White	Hispanic	10.0	No treatment	Osteosarcoma	Osteosarcoma	P	primary	blood	Femur	Right Distal	Thigh		Surgical resection	Osteoblastic osteosarcoma	PDX only
+511	UTHSCSA	Male	3	White	Non-Hispanic	16.0	No treatment	Hepatoblastoma	Hepatoblastoma	P	primary	blood	Liver		Liver		Surgical resection		PDX only
+512	UTSW	Male	1	White	Non-Hispanic	17.0	Chemotherapy	Neuroblastoma	Neuroblastoma	P	primary								PDX only
+516	UTHSCSA	Male	6	White	Hispanic	14.0	No treatment	Glioblastoma	Other Tumor	P	primary	blood	Brain, NOS	Right	Parietal lobe	Right	Surgical resection	High-grade pleomorphic tumor with focal spindle cells in fascicles, foci of fibrillary matrix and pseudopalisading necrosis, consistent with glioblastoma	PDX only
+522	UTHSCSA	Male	15	White	Hispanic	32.0	No treatment	Osteosarcoma	Osteosarcoma	P	primary	blood	Thigh (femur w/ext to knee joint)   	Left distal	Femur	Left	Surgical resection	Osteoblastic osteosarcoma	PDX only
+529	UTSW	Female	13	Black or AA	Non-Hispanic	14.0	radiation	Clear Cell Sarcoma	Clear Cell Sarcoma	P	primary 	blood	long bone of lower extremity	right	long bone of lower extremity	right	Surgical resection		PT-PDX
+530	UTHSCSA	Male	2	White	Non-Hispanic	18.0	No treatment	Neuroblastoma	Neuroblastoma	P 	primary	blood	Skull (calvarial lesion)	Left			Incisional biopsy		PDX only
+532	UTHSCSA	Female	16	White	Hispanic	18.0	No treatment	Osteosarcoma	Osteosarcoma	P	primary	blood	Lower leg	Left	Tibia	Left	Surgical resection	Chondroblastic and osteoblastic osteosarcoma with bizarre cells	PDX only
+533	UTHSCSA	Male	18	White	Hispanic	26.5	No treatment	Adenocarcinoma	Other Tumor	P	primary	blood	Temporal lobe	Right	Parotid gland	Right	needle biopsy	Completely necrotic	PDX only
+543	UTHSCSA	Female	1	White (Arabic)	Non-Hispanic	7.0	No treatment	Hepatoblastoma	Hepatoblastoma	P	primary		Liver		Liver		Surgical resection		PDX only
+556	UTHSCSA	Female	17	White	Hispanic	8.0	Yes (unspecified)	Osteosarcoma	Osteosarcoma	P	metastatic	blood	Tibia	Left	Lower extremity  	Left	Limited autopsy		PDX only
+560	UTSW	Female	1	White	Non-Hispanic		No treatment	Wilms Tumor	Wilms Tumor	P	primary 	blood	kidney 	right	kidney 	right	Surgical resection	Fascicles of spindle cells withrhabdomyoblastic differentiation	PT-PDX
+561	UTHSCSA	Male	16	AA	Non-Hispanic	8.0	Yes (unspecified)	Wilms Tumor	Wilms Tumor	R	primary		kidney & hemiabdomen	Right	Hemiabdomen 	Right	Surgical debulking		PDX only
+564	UTHSCSA	Female	11	Asian	Non-Hispanic	54.0	No treatment	Osteosarcoma	Osteosarcoma	P	primary	blood	Mid-femur	Right	Mid-femur		Bone mass biopsy		PDX only
+585	UTSW	Male	2	White	Hispanic	15.0	Chemotherapy	Hepatoblastoma	Hepatoblastoma	P	primary 	blood	liver		liver		Surgical resection		PT-PDX
+652	UTSW	Male	16	White	Hispanic	16.0	No treatment	Germ Cell Tumor	Germ Cell Tumor	P	primary		Testis	Left	Testis	Left	Surgical resection		PT only
+655	UTSW	Male	5	AA	Non-Hispanic		No treatment	Wilms Tumor	Wilms Tumor	P	metastatic	blood	kidney	Left	kidney		complete resection 		PT-PDX
+668	UTSW	Male	4	White	Hispanic	9.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary	blood	kidney	Left	kidney		Surgical resection		PT-PDX
+707	UTSW	Female	0	White	Hispanic	15.0	No treatment	Hepatoblastoma	Hepatoblastoma	P	primary 		liver		liver		surgical resection		PDX only
+1739	UTSW	Male	2	White	Non-Hispanic	12.0	No treatment	Hepatoblastoma	Hepatoblastoma	P	primary		Liver		Liver		Needle core biopsy	crowded fetal, embryonal, ductal	PT-PDX
+1753	UTSW	Male	10	Black or AA	Non-Hispanic	32.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary	saliva	Pelvis, NOS		Pelvis, NOS		Surgical resection	triphasic Wilms	PT-PDX
+1754	UTSW	Male	1	White	Non-Hispanic	33.5	No treatment	Clear Cell Sarcoma	Clear Cell Sarcoma	P	primary	blood	Kidney, NOS	Right	Kidney, NOS	Right	Surgical resection	ccsk	PT-PDX
+1763	UTSW	Female	1	Black or AA	Non-Hispanic	14.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary		Kidney, NOS	Left	Kidney, NOS	Left	Surgical resection	triphasic Wilms	PT-PDX
+1792	UTSW	Female	17	White	Hispanic	7.0	Chemotherapy	Osteosarcoma	Osteosarcoma	P	primary	blood	femur	left	Lung, NOS	Left	surgical resection		PT-PDX
+1795	UTSW	Male	17	White	Hispanic	13.0	No treatment	Germ Cell Tumor	Germ Cell Tumor	P	primary	blood	Testis, NOS	Right	Testis, NOS	Right	Surgical resection		PT-PDX
+1796	UTSW	Female	16	Black or AA	Non-Hispanic	6.5	No treatment	Leydig Cell Tumor	Other Tumor	P	primary	blood	Ovary	Right	Ovary	Right	Surgical resection		PT-PDX
+1823	UTSW	Female	5	White	Non-Hispanic	22.5	No treatment	Wilms Tumor	Wilms Tumor	P	primary	blood	Kidney, NOS	Right	Kidney, NOS	Right	Surgical resection		PT-PDX
+1826	UTSW	Male	14	White	Hispanic	16.0	No treatment	Germ Cell Tumor	Germ Cell Tumor	P	primary	blood	Testis, NOS	Left	Testis, NOS	Left	Surgical resection		PT-PDX
+1853	UTSW	Female	0	Black or AA	Non-Hispanic	38.0	Chemotherapy	Neuroblastoma	Neuroblastoma	P	primary		Mediastinum, NOS		Mediastinum, NOS		Surgical resection		PDX only
+1907	UTSW	Female	5	White	Non-Hispanic	7.5	Chemotherapy	Pleomorphic Sarcoma	Other Sarcoma	P	primary		Frontal lobe	Right	Frontal lobe	Right	Surgical resection		PT-PDX
+1912	UTSW	Female	3	White	Hispanic	17.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary		Kidney, NOS	Right	Kidney, NOS	Right	Surgical resection		PDX only
+1913	UTSW	Male	5	White	Non-Hispanic	46.0	No treatment	Neuroblastoma	Neuroblastoma	P	primary	blood	Adrenal gland, NOS	Left	Adrenal gland, NOS	Left	Surgical resection		PT-PDX
+1917	UTSW	Male	17	White	Hispanic	8.0	No treatment	Germ Cell Tumor	Germ Cell Tumor	P	primary		Testis, NOS	Right	Testis, NOS	Right	Surgical resection	Consistent with yolk sac tumor	PDX only
+1922	UTSW	Male	7	Black or AA	Non-Hispanic	20.0	No treatment	Osteosarcoma	Osteosarcoma	P	primary	blood	Long bones of lower limb and associated joints	Right	Long bones of lower limb and associated joints	Right	Surgical resection		PT-PDX
+1925	UTSW	Female	3	White	Hispanic	10.0	Chemotherapy	Hepatoblastoma	Hepatoblastoma	P	primary	blood	Liver		Liver		Surgical resection		PDX only
+1932	UTSW	Male	4	White	Non-Hispanic	14.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary	blood	kidney, NOS	Right	Kidney, NOS	Right	Surgical resection		PT-PDX
+1939	UTSW	Male	13	White	Non-Hispanic		No treatment	Adrenal cortical carcinoma	Other Tumor	P	primary		Adrenal gland, NOS	Left	Adrenal gland, NOS	Left	Surgical resection	Sheets of epithelioid cells in packets separated by thin firbovascular stroma, IHC would be helpful	PDX-PDX
+1957	UTSW	Male	1	White	Hispanic	30.0	Chemotherapy	Hepatoblastoma	Hepatoblastoma	P	primary	blood	Liver		Liver		Surgical resection		PT-PDX
+1959	UTSW	Male	2	White	Hispanic	10.0	No treatment	Hepatoblastoma	Hepatoblastoma	P	primary	blood	Liver		Liver		Surgical resection		PT-PDX
+1960	UTSW	Female	9	Black or AA	Non-Hispanic	26.5	No treatment	Wilms Tumor	Wilms Tumor	P	primary		Kidney, NOS	Left	Kidney, NOS	Left	Surgical resection	Triphasic Wilms tumor	PT-PDX
+1979	UTSW	Male	15	White	Hispanic	11.0	Chemotherapy	Germ Cell Tumor	Germ Cell Tumor	P	primary	blood	Testis, NOS	Left	Lymph nodes of abdomen	Left	Surgical resection		PT-PDX
+1981	UTSW	Male	12	Asian	Non-Hispanic	34.0	Chemotherapy	Osteosarcoma	Osteosarcoma	R	primary		Long bones of lower limb and associated joints	Right	Long bones of lower limb and associated joints	Right	Surgical resection	Osteoblastic osteosarcoma	PDX only
+1982	UTSW	Male	16	White	Hispanic	32.0	No treatment	Mesothelioma	Other Tumor	P	primary		Abdomen, NOS		Abdomen, NOS		Surgical resection		PDX only
+2035	UTSW	Male	12	White	Non-Hispanic	15.0	Chemotherapy	Osteosarcoma	Osteosarcoma	P	primary	blood	Long bones of lower limb and associated joints	Right	Long bones of lower limb and associated joints	Right	Surgical resection	osteoblastic and chondroblastic osteosarcoma	PT-PDX
+2050	UTSW	Female	2	White	Hispanic	14.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary	blood	Kidney, NOS	Right	Kidney, NOS	Right	Surgical resection		PT-PDX
+2083	UTSW	Female	7	Black or AA	Non-Hispanic	41.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary	blood	Kidney, NOS	Left	Kidney, NOS	Left	Surgical resection		PDX only
+2084	UTSW	Female	12	Black or AA	Non-Hispanic	20.0	Chemotherapy	Germ Cell Tumor	Germ Cell Tumor	P	primary	blood	Ovary	Right	Ovary	Right	Surgical resection	Mature teratoma, no malignant germ cell tumor components	PDX only
+2129	UTSW	Female	11	Other	Non-Hispanic	31.0	No treatment	Germ Cell Tumor	Germ Cell Tumor	P	primary	blood	Ovary	Left	Ovary	Left	Surgical resection	Foci of stratified pleomorphic epithelial cells with underlying basement membrane, and abundant lymphoplasmacytic infiltrate	PDX only
+2197	UTSW	Male	11	White	Hispanic	56.5	Chemotherapy	Ewing Sarcoma	Other Sarcoma	P	primary	blood	tibia	right	tibia	right	surgical resection		PDX only
+2237	UTSW	Female	0	Black or AA	Non-Hispanic		No treatment	Hepatoblastoma	Hepatoblastoma	P	primary		liver		liver		segmental lobectomy		PT only
+2264	UTSW	Male	6	White	Non-Hispanic	22.0	Chemotherapy	Wilms Tumor	Wilms Tumor	R	primary	blood	Kidney, NOS		Liver		Surgical resection		PT-PDX
+2324	UTSW	Male	1	White	Hispanic	31.0	Chemotherapy	Clear Cell Sarcoma	Clear Cell Sarcoma	P	primary 		kidney	left	kidney 	left	Surgical resection		PDX only
+883129	COG	Female	11	White	Hispanic	19.0		Germ Cell Tumor	Germ Cell Tumor		primary 				Ovary yolk sack				PDX only
+891173	COG	Female	1	Asian	Non-Hispanic	13.0		Hepatoblastoma	Hepatoblastoma		primary 				Liver				PDX only
+891760	COG	Male	0	White	Hispanic	9.0		Hepatoblastoma	Hepatoblastoma		primary 				Liver				PDX only
+892257	COG	Female	10	Black or AA	Non-Hispanic	11.0		Germ Cell Tumor	Germ Cell Tumor		primary 				Ovary, non seminnomatous				PDX only
+895452	COG	Female	12	Black or AA	Non-Hispanic	12.0		Ovarian tumor	Other Tumor		primary 				Ovary, teratoma				PDX only
+896751	COG	Male				61.0		Germ Cell Tumor	Germ Cell Tumor						Right testicle				PDX only
+1939-Dup	UTSW	Male	13	White	Non-Hispanic	46.0	No treatment	Adrenal cortical carcinoma	Other Tumor	P	primary		Adrenal gland, NOS	Left	Adrenal gland, NOS	Left	Surgical resection	Sheets of epithelioid cells in packets separated by thin firbovascular stroma, IHC would be helpful	PDX-PDX
+560-LM	UTHSCSA	Male	11	White	Non-Hispanic	22.0	Yes (unspecified)	Osteosarcoma	Osteosarcoma	P	metastatic		Fibula	Right	Lung	Right	Limited autopsy		PDX only
+560-SM	UTHSCSA	Male	11	White	Non-Hispanic	16.0	Yes (unspecified)	Osteosarcoma	Osteosarcoma		metastatic		Fibula	Right	Skin nodule		Limited autopsy		PDX only
