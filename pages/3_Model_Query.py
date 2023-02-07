@@ -11,6 +11,8 @@ indir = './raw_data'
 exp = pd.read_table(indir + '/exp.tpm.txt', index_col = 0)
 exp = exp.filter(regex = 'PDX')
 exp = exp.drop('1853_PDX', axis = 1) 
+exp = exp.drop('1947_PDX', axis = 1) 
+
 exp.columns = exp.columns.str.replace('875194','1939-Dup',regex = True)
 
 mut = pd.read_table(indir + '/Final_mut.maf')
@@ -52,7 +54,8 @@ clinical_col2show = ['PatientID',  'Disease Code level 2', 'Gender', 'Age(year)'
 mut_col2show = ['Variant_Classification', 'HGVSp_Short']
 
 if len(ct_sel) == 0:
-    ct_sel = ['Hepatoblastoma']
+    a = info 
+    info2show = info2show[clinical_col2show].set_index('PatientID').fillna(np.nan)
 else:
     info2show = pd.DataFrame()
     for ct in ct_sel:
@@ -87,10 +90,10 @@ else:
 
         info2show = pd.concat([info2show,c], axis = 1)
         info2show = info2show.fillna(np.nan)
-        #info2show['Age(year)'] =[str(round(i,1)) for i in info2show['Age(year)']]
-        info2show = info2show.reset_index()
-        info2show.columns = ['PatientID'] + list(info2show.columns[1:])
-        st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel: '{:.1f}'}))
-        # Download
-        csv = convert_df(info2show.fillna('NA'))
-        st.download_button("Download", csv, "file.csv", "text/csv", key='download-csv')
+#info2show['Age(year)'] =[str(round(i,1)) for i in info2show['Age(year)']]
+info2show = info2show.reset_index()
+info2show.columns = ['PatientID'] + list(info2show.columns[1:])
+st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel: '{:.1f}'}))
+# Download
+csv = convert_df(info2show.fillna('NA'))
+st.download_button("Download", csv, "file.csv", "text/csv", key='download-csv')
