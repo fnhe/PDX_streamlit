@@ -8,11 +8,10 @@ receiver = 'lalalaxf93@gmail.com'
 
 
 with st.form('PDX data request'):
-	ids = st.text_area("Enter the PDX IDs you intereted")
-	#ids = st.file_uploader('Attachment')
+    ids = st.text_area("Enter the PDX IDs you intereted")
 
-	col1, col2 = st.columns(2)
-	with col1:
+    col1, col2 = st.columns(2)
+    with col1:
         fn = st.text_input("First Name")
     with col2:
         ln = st.text_input("Last Name")
