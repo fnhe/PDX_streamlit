@@ -101,3 +101,6 @@ ax1.set_ylim(ylim)
 ax2.set_ylim(ylim)
 
 st.pyplot(fig)
+# Download
+csv = convert_df(info2plot)
+st.download_button("Download", csv, "exp.csv", "text/csv", key='download-csv')
