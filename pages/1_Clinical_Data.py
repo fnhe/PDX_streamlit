@@ -1,5 +1,12 @@
 #2023-02-06 14:07:28 
 # Add every font at the specified location
+from matplotlib import font_manager
+font_dir = ['/home/UTHSCSA/hef/Tools/miniconda3/fonts']
+for font in font_manager.findSystemFonts(font_dir):
+    font_manager.fontManager.addfont(font)
+# Set font family globally
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 
 import streamlit as st
 import pandas as pd 
