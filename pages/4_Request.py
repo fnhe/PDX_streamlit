@@ -45,7 +45,7 @@ with st.form('PDX data request'):
 	with col2:
 		phone = st.text_input("Phone number")
 	other = st.text_area("Other")
-	submit_info = st.form_submit_button(label = 'Submit')
+	submit_info = st.form_submit_button(label = 'Submit', on_click=print,)
 
 	if submit_info:
 		if email and ids and ins and fn:
@@ -55,4 +55,4 @@ with st.form('PDX data request'):
 		else:
 			st.warning('Please fill PDX IDs, Email, Institute and Name')
 
-st.form
+#st.form
