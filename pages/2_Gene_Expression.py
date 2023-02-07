@@ -72,7 +72,6 @@ info = pd.read_table(indir + '/sample_info.txt')
 info_dict = dict(info[['PatientID', 'Disease Code level 1']].values)
 
 gene_ranking = sorted(exp.index)
-gene_sel = 'PDGFRA'
 gene_sel = st.selectbox(
     'Gene',
     gene_ranking
@@ -96,13 +95,13 @@ g1 = plot_box_with_ax_datatype1(info2plot, X, Y, ax1)
 ax1.set_title('PT and PDX samples')
 g2 = plot_box_with_ax_datatype2(info2plot[info2plot['Datatype'] == 'PDX'], X, Y, ax2)
 ax2.set_title('PDX samples')
+sns.despine() 
 
 ylim = st.slider(
     'Select a TPM range of y-axis',
     0.0, 100.0, (0.0, round(float(ax1.get_ylim()[1]), 1)) )
 ax1.set_ylim(ylim)
 ax2.set_ylim(ylim)
-
 st.pyplot(fig)
 # Download
 def convert_df(df):
