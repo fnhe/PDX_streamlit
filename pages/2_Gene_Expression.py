@@ -83,7 +83,7 @@ info2plot['Cancer'] = info2plot.PatientID.map(info_dict)
 sns.set_context('notebook',font_scale = 1.6, rc = {'lines.linewidth':1}) #设置文本
 fig = plt.figure(figsize=(15,5))
 
-gs = gridspec.GridSpec(1, 2, hspace=2 , width_ratios=[1,1]) #不同图片间隔
+gs = gridspec.GridSpec(1, 2, hspace=2 , width_ratios=[1,1]) 
 ax1 = plt.subplot(gs[0, 0])
 ax2 = plt.subplot(gs[0, 1])
 
@@ -100,4 +100,4 @@ ylim = st.slider(
 ax1.set_ylim(ylim)
 ax2.set_ylim(ylim)
 
-st.pyplot(fig, use_container_width=True, figsize=(15,5))
+st.pyplot(fig, figsize=(15,5))
