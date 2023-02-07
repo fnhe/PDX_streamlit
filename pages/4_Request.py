@@ -23,7 +23,7 @@ with st.form('PDX data request'):
 	with col3:
 		country = st.text_input("Country")
 	with col1:
-		pos = st.selectbox("Your position", ['', 'Researcher','Professor','Student','Other'])
+        pos = st.selectbox("Your position", ['', 'Researcher','Professor','Student','Other'])
 
 
 	col1, col2 = st.columns(2)
@@ -39,9 +39,10 @@ with st.form('PDX data request'):
             server = smtplib.SMTP('smtp.gmail.com', 587)
             server.starttls()
             server.login(sender, 'vvljquqzjrqleduy')
-			st.success('Thank you for your inquiry! The email have been sented!')
-			message = submit_info
-			server.sendmail(sender, receiver, message)
+            st.success('Thank you for your inquiry! The email have been sented!')
+            
+            message = submit_info
+            server.sendmail(sender, receiver, message)
 		else:
 			st.warning('Please fill PDX IDs, Email, Institute and Name')
 
