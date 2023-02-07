@@ -100,4 +100,4 @@ ylim = st.slider(
 ax1.set_ylim(ylim)
 ax2.set_ylim(ylim)
 
-st.pyplot(fig, figsize=(15,5))
+st.pyplot(fig)
