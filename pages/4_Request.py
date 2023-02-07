@@ -1,24 +1,11 @@
 import streamlit as st
-import email, smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.header import Header
-from email.mime.application import MIMEApplication
+import smtplib
 
-def send_email(sender, password, receiver, smtp_server, smtp_port, email_message, subject = 'Data request from streamlit'):
-    message =  MIMEMultipart()
-    message['To'] = Header(receiver)
-    message['From'] = Header(sender)
-    message['Subject'] = Header(subject)
-    message.attach(MIMEText(email_message, 'plain', 'utf-8'))
+sender  = 'streamlit2fnhe@gmail.com'
+password = 'vvljquqzjrqleduy' 
+receiver = 'lalalaxf93@gmail.com'
 
-    server = smtplit.SMTP(smtp_server, smtp_port)
-    server.starttls()
-    server.ehlo()
-    server.login(sender, password)
-    text = message.as_string()
-    server.sendmail(sender, receiver, text)
-    server.quit()
+
 
 with st.form('PDX data request'):
 	ids = st.text_area("Enter the PDX IDs you intereted")
@@ -49,9 +36,12 @@ with st.form('PDX data request'):
 
 	if submit_info:
 		if email and ids and ins and fn:
+            server = smtplib.SMTP('smtp.gmail.com', 587)
+            server.starttls()
+            server.login(sender, 'vvljquqzjrqleduy')
 			st.success('Thank you for your inquiry! The email have been sented!')
 			message = submit_info
-			send_email(sender = 'streamlit2fnhe@gmail.com', password='vvljquqzjrqleduy', receiver='lalalaxf93@gmail.com', smtp_server = 'smtp.gmail.com', smtp_port = 587, email_message = message)
+			server.sendmail(sender, receiver, message)
 		else:
 			st.warning('Please fill PDX IDs, Email, Institute and Name')
 
