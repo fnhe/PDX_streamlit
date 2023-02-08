@@ -63,6 +63,6 @@ if res:
         if other:
             other_info = """Other info: {}\n""".format(other)
             message = message + other_info
-        sendmail(receiver, subject, message)
+        send_email(receiver, subject, message)
     else:
         st.warning('Please fill PDX IDs, Email, Name, Phone, Institute and Country')
