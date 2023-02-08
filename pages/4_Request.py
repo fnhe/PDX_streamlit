@@ -43,7 +43,11 @@ if res:
         Phone: {}\n
         Institute: {}, {} \n        
         --------------------------------\n\n""".format(subject, email, fn, ln, phone, ins, country)
-        message = basic_info + ids
+        id_info = """"ID:\n{}\n""".format(ids)
+        message = basic_info + id_info 
+        if other:
+            other_info = """"Other info:{}\n""".format(other)
+            message = message + other_info
         server.sendmail(sender, receiver, message)
     else:
         st.warning('Please fill PDX IDs, Email, Name, Phone, Institute and Country')
