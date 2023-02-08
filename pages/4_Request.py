@@ -28,14 +28,21 @@ with st.form('PDX data request'):
     res = st.form_submit_button(label = 'Submit')
 
 if res:
-    if email and ids and ins and fn:
+    if email and ids and ins and fn and phone and country:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
         server.login(sender, 'vvljquqzjrqleduy')
         st.success('Thank you for your inquiry! The email have been sented!')
         
-        subject = 'PDX data request from streamlit' + ln
-        message = form
+        subject = 'PDX data request from streamlit' + '(' + email + ')' 
+        basic_info = """
+        --------------------------------\n
+        Email: {}\n
+        Full Name: {} {} \n 
+        Phone: {}\n
+        Institute: {}, {} \n        
+        --------------------------------\n\n""".format(email, fn, ln, phone, ins, country)
+        message = basic_info + ids
         server.sendmail(sender, receiver, message)
     else:
-        st.warning('Please fill PDX IDs, Email, Institute and Name')
+        st.warning('Please fill PDX IDs, Email, Name, Phone, Institute and Country')
