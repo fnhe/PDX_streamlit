@@ -36,7 +36,7 @@ if form:
         server.login(sender, 'vvljquqzjrqleduy')
         st.success('Thank you for your inquiry! The email have been sented!')
         
-        message = submit_info
+        message = form
         server.sendmail(sender, receiver, message)
     else:
         st.warning('Please fill PDX IDs, Email, Institute and Name')
