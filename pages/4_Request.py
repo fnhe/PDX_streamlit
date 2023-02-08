@@ -31,7 +31,7 @@ with st.form('PDX data request'):
     with col3:
         country = st.text_input("Country")
     with col1:
-        pos = st.selectbox("Institution Type", ['', 'Academia','Professor','Industry','Other'])
+        pos = st.selectbox("Institution Type", ['', 'Academia','Industry','Other'])
     col1, col2 = st.columns(2)
     with col1:
         email = st.text_input("Email") 
