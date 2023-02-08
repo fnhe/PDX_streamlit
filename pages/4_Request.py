@@ -3,7 +3,7 @@ import smtplib
 
 sender  = 'streamlit2fnhe@gmail.com'
 password = 'vvljquqzjrqleduy' 
-receiver = 'zhengs3@uthscsa.edu'
+receiver = 'lalalaxf93@gmail.com'
 
 with st.form('PDX data request'):
     ids = st.text_area("Enter the PDX IDs you intereted")
