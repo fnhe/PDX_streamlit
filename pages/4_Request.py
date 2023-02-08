@@ -19,7 +19,7 @@ def send_email(to, subject, message): #generate from ChatGPT
         st.error("Failed to send email: " + str(e))
 
 with st.form('PDX data request'):
-    ids = st.text_area("Enter the PDX IDs you intereted")
+    ids = st.text_area("Enter the PDX IDs you are requesting")
     col1, col2 = st.columns(2)
     with col1:
         fn = st.text_input("First Name")
@@ -31,7 +31,7 @@ with st.form('PDX data request'):
     with col3:
         country = st.text_input("Country")
     with col1:
-        pos = st.selectbox("Your position", ['', 'Researcher','Professor','Student','Other'])
+        pos = st.selectbox("Institution Type", ['', 'Academia','Professor','Industry','Other'])
     col1, col2 = st.columns(2)
     with col1:
         email = st.text_input("Email") 
@@ -41,7 +41,7 @@ with st.form('PDX data request'):
     res = st.form_submit_button(label = 'Submit')
 
 if res:
-    if email and ids and ins and fn and phone and country:
+    if email and ids and ins and fn and phone and country and pos:
         #server = smtplib.SMTP('smtp.gmail.com', 587)
         #server.starttls()
         #server.login(sender, 'vvljquqzjrqleduy')
@@ -54,8 +54,8 @@ if res:
         Email: {}\n
         Full Name: {} {} \n 
         Phone: {}\n
-        Institute: {}, {} \n        
-        --------------------------------\n\n""".format(subject, email, fn, ln, phone, ins, country)
+        Institute: {}, {}, {} \n        
+        --------------------------------\n\n""".format(subject, email, fn, ln, phone, pos, ins, country)
         id_info = """
         ID Request:\n
         {}\n
@@ -66,4 +66,4 @@ if res:
             message = message + other_info
         send_email(receiver, subject, message)
     else:
-        st.warning('Please fill PDX IDs, Email, Name, Phone, Institute and Country')
+        st.warning('Please fill PDX IDs, Email, Name, Phone, Institute type and Country')
