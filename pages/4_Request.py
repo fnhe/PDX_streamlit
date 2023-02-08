@@ -43,10 +43,12 @@ if res:
         Phone: {}\n
         Institute: {}, {} \n        
         --------------------------------\n\n""".format(subject, email, fn, ln, phone, ins, country)
-        id_info = """"ID:\n{}\n""".format(ids)
+        id_info = """
+        ID Request:\n{}\n
+        --------------------------------""".format(ids)
         message = basic_info + id_info 
         if other:
-            other_info = """"Other info:{}\n""".format(other)
+            other_info = """Other info: {}\n""".format(other)
             message = message + other_info
         server.sendmail(sender, receiver, message)
     else:
