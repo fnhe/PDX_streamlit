@@ -5,7 +5,7 @@ sender  = 'streamlit2fnhe@gmail.com'
 password = 'vvljquqzjrqleduy' 
 receiver = 'lalalaxf93@gmail.com'
 
-def send_email(to, subject, message):
+def send_email(to, subject, message): #generate from ChatCPG
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
