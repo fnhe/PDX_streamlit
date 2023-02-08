@@ -25,9 +25,9 @@ with st.form('PDX data request'):
     with col2:
         phone = st.text_input("Phone number")
     other = st.text_area("Other")
-    st.form_submit_button(label = 'Submit')
+    res = st.form_submit_button(label = 'Submit')
 
-if form:
+if res:
     if email and ids and ins and fn:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
