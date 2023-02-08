@@ -44,6 +44,6 @@ if res:
         Institute: {}, {} \n        
         --------------------------------\n\n""".format(subject, email, fn, ln, phone, ins, country)
         message = basic_info + ids
-        server.sendmail(sender, receiver, message, subject = subject)
+        server.sendmail(sender, receiver, message)
     else:
         st.warning('Please fill PDX IDs, Email, Name, Phone, Institute and Country')
