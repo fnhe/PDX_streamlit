@@ -44,8 +44,9 @@ if res:
         Institute: {}, {} \n        
         --------------------------------\n\n""".format(subject, email, fn, ln, phone, ins, country)
         id_info = """
-        ID Request:\n{}\n
-        --------------------------------""".format(ids)
+        ID Request:\n
+        {}\n
+        --------------------------------\n\n""".format(ids)
         message = basic_info + id_info 
         if other:
             other_info = """Other info: {}\n""".format(other)
