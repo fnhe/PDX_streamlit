@@ -4,6 +4,18 @@ import smtplib
 sender  = 'streamlit2fnhe@gmail.com'
 password = 'vvljquqzjrqleduy' 
 receiver = 'lalalaxf93@gmail.com'
+def send_email(to, subject, message):
+    try:
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.ehlo()
+        server.starttls()
+        server.login(streamlit2fnhe@gmail.com, password)
+        message = 'Subject: {}\n\n{}'.format(subject, message)
+        server.sendmail('sender_email_address@gmail.com', to, message)
+        server.quit()
+        st.success("Email sent successfully!")
+    except Exception as e:
+        st.error("Failed to send email: " + str(e))
 
 with st.form('PDX data request'):
     ids = st.text_area("Enter the PDX IDs you intereted")
@@ -29,12 +41,12 @@ with st.form('PDX data request'):
 
 if res:
     if email and ids and ins and fn and phone and country:
-        server = smtplib.SMTP('smtp.gmail.com', 587)
-        server.starttls()
-        server.login(sender, 'vvljquqzjrqleduy')
-        st.success('Thank you for your inquiry! The email have been sented!')
+        #server = smtplib.SMTP('smtp.gmail.com', 587)
+        #server.starttls()
+        #server.login(sender, 'vvljquqzjrqleduy')
+        st.success('Thank you for your inquiry!')
         
-        subject = 'PDX data request from streamlit' 
+        subject = 'PDX data request (streamlit)' 
         basic_info = """
         --------------------------------\n
         Subject: {}\n
@@ -51,6 +63,6 @@ if res:
         if other:
             other_info = """Other info: {}\n""".format(other)
             message = message + other_info
-        server.sendmail(sender, receiver, message)
+        sendmail(receiver, subject, message)
     else:
         st.warning('Please fill PDX IDs, Email, Name, Phone, Institute and Country')
