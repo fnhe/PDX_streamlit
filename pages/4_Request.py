@@ -34,14 +34,15 @@ if res:
         server.login(sender, 'vvljquqzjrqleduy')
         st.success('Thank you for your inquiry! The email have been sented!')
         
-        subject = 'PDX data request from streamlit' + '(' + email + ')' 
+        subject = 'PDX data request from streamlit' 
         basic_info = """
         --------------------------------\n
+        Subject: {}\n
         Email: {}\n
         Full Name: {} {} \n 
         Phone: {}\n
         Institute: {}, {} \n        
-        --------------------------------\n\n""".format(email, fn, ln, phone, ins, country)
+        --------------------------------\n\n""".format(subject, email, fn, ln, phone, ins, country)
         message = basic_info + ids
         server.sendmail(sender, receiver, message, subject = subject)
     else:
