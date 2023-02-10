@@ -17,5 +17,5 @@ st.write('We have created :blue[pstPDX] portal to share this resource with the c
 st.write('The raw sequencing data are available at EGA (EGAS00001006710). The processed data, including identified clinical data, mutations, copy number, and gene expression can be found on synapse ([syn35811916](https://www.synapse.org/#!Synapse:syn35811916/files/)). ')
 
 st.write('- Request for PDX data (mutations/expression) can be made on the [Model Query](https://pstpdx.streamlit.app/Model_Query) page.')
-st.write('- Request PDX tissue for research can be made on the [Request](https://pstpdx.streamlit.app/Request) page.')
+st.write('- Request PDX tissue for research purpose can be made on the [Request](https://pstpdx.streamlit.app/Request) page.')
 st.write('- Any questions about the portal should be directed to :blue[zhenglab@uthscsa.edu]. We will provide feedback in 3-5 business days upon receipt of the request. ')
