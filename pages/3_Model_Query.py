@@ -97,5 +97,5 @@ info2show.columns = ['PatientID', 'Cancer'] + list(info2show.columns[2:-1]) + [g
 st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel+'(TPM)': '{:.1f}'}, na_rep = 'N/A') )
 st.caption('_Click the right top corner for the full view of the table_')
 # Download
-csv = convert_df(info2show)
+csv = convert_df(info2show.fillna('N/A') )
 st.download_button("Download", csv, "file.csv", "text/csv", key='download-csv')
