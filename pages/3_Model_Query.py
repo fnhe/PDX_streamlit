@@ -68,15 +68,14 @@ else:
     else:
         dt = mut[(mut['Hugo_Symbol'] == gene_sel)].set_index('Tumor group2')[mut_col2show]
         try:
-            b = dt.T[[i for i in ct_sel if i in list(dt.index.unique()) ]].T.reset_index().set_index('PatientID')
+            b = dt.T[[i for i in ct_sel if i in list(dt.index.unique()) ]].T.reset_index()
         except KeyError:
             b = pd.DataFrame(index = info2show.index)
             b['HGVSp_Short'] = ['WT'] * len(info2show)
             b['Variant_Classification'] = ['WT'] * len(info2show)
         else:
-            b = dt.T[[i for i in ct_sel if i in list(dt.index.unique()) ]].T.reset_index().set_index('PatientID')
-            b = b.reset_index().groupby(['PatientID']).first() 
-        b = b.drop('Tumor group2', axis = 1)
+            b = dt.T[[i for i in ct_sel if i in list(dt.index.unique()) ]].T.reset_index()
+            b = b.drop('Tumor group2', axis = 1).reset_index().groupby(['PatientID']).first() 
         b.index = b.index.astype(str)
         info2show.index = info2show.index.astype(str)
         info2show = pd.concat([info2show,b], axis = 1)
