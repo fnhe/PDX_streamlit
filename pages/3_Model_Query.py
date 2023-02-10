@@ -52,7 +52,7 @@ gene_sel = st.selectbox(
 
 clinical_col2show = ['PatientID',  'Disease Code level 2', 'Gender', 'Age(year)', 'Race', 'Ethnicity','Therapy prior to PDX collection', 
            'Tumor Collected (Primary or Met)', 'Primary Tumor Site', 'Site of Tumor Collection']
-mut_col2show = ['Variant_Classification', 'HGVSp_Short']
+mut_col2show = ['PatientID','Variant_Classification', 'HGVSp_Short']
 
 if len(ct_sel) == 0:
     a = info 
@@ -66,16 +66,17 @@ else:
     if len(gene_sel) == 0:
         st.dataframe(info2show)
     else:
+        dt = mut[(mut['Hugo_Symbol'] == gene_sel)].set_index('Tumor group2')[mut_col2show]
         try:
-            b = mut[(mut['Hugo_Symbol'] == gene_sel)].set_index('Tumor group2').T[ct_sel].T.reset_index().set_index('PatientID')[mut_col2show]
+            b = dt.T[[i for i in ct_sel if i in list(dt.index.unique()) ]].T.reset_index().set_index('PatientID')
         except KeyError:
             b = pd.DataFrame(index = info2show.index)
             b['HGVSp_Short'] = ['WT'] * len(info2show)
             b['Variant_Classification'] = ['WT'] * len(info2show)
         else:
-            b = mut[(mut['Hugo_Symbol'] == gene_sel)].set_index('Tumor group2').T[ct_sel].T.reset_index().set_index('PatientID')[mut_col2show]
+            b = dt.T[[i for i in ct_sel if i in list(dt.index.unique()) ]].T.reset_index().set_index('PatientID')
             b = b.reset_index().groupby(['PatientID']).first() 
-        print(b)    
+        b = b.drop('Tumor group2', axis = 1)
         b.index = b.index.astype(str)
         info2show.index = info2show.index.astype(str)
         info2show = pd.concat([info2show,b], axis = 1)
