@@ -57,6 +57,9 @@ mut_col2show = ['Variant_Classification', 'HGVSp_Short']
 if len(ct_sel) == 0:
     a = info 
     info2show = a[clinical_col2show].set_index('PatientID').fillna(np.nan)
+    info2show = info2show.reset_index()
+    info2show.columns = ['PatientID', 'Cancer'] + list(info2show.columns[2:]) 
+    st.dataframe( info2show.style.format({'Age(year)': '{:.1f}'}, na_rep = 'N/A') )
 else:
     info2show = pd.DataFrame()
     for ct in ct_sel:
@@ -91,11 +94,10 @@ else:
 
         info2show = pd.concat([info2show,c], axis = 1)
         info2show = info2show.fillna(np.nan)
-#info2show['Age(year)'] =[str(round(i,1)) for i in info2show['Age(year)']]
-info2show = info2show.reset_index()
-info2show.columns = ['PatientID', 'Cancer'] + list(info2show.columns[2:-1]) + [gene_sel+'(TPM)']
-st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel+'(TPM)': '{:.1f}'}, na_rep = 'N/A') )
+    info2show = info2show.reset_index()
+    info2show.columns = ['PatientID', 'Cancer'] + list(info2show.columns[2:-1]) + [gene_sel+'(TPM)']
+    st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel+'(TPM)': '{:.1f}'}, na_rep = 'N/A') )
 st.caption('_Click the right top corner for the full view of the table_')
 # Download
-csv = convert_df(info2show.fillna('N/A') )
+csv = convert_df(info2show.fillna('NA'))
 st.download_button("Download", csv, "file.csv", "text/csv", key='download-csv')
