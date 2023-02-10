@@ -74,7 +74,8 @@ else:
             b['Variant_Classification'] = ['WT'] * len(info2show)
         else:
             b = mut[(mut['Hugo_Symbol'] == gene_sel)].set_index('Tumor group2').T[ct_sel].T.reset_index().set_index('PatientID')[mut_col2show]
-            b = b.reset_index().groupby(['PatientID']).first()            
+            b = b.reset_index().groupby(['PatientID']).first() 
+        print(b)    
         b.index = b.index.astype(str)
         info2show.index = info2show.index.astype(str)
         info2show = pd.concat([info2show,b], axis = 1)
@@ -94,7 +95,7 @@ else:
 #info2show['Age(year)'] =[str(round(i,1)) for i in info2show['Age(year)']]
 info2show = info2show.reset_index()
 info2show.columns = ['PatientID', 'Cancer'] + list(info2show.columns[2:-1]) + [gene_sel+'(TPM)']
-st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel: '{:.1f}'}, na_rep = 'N/A') )
+st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel+'(TPM)': '{:.1f}'}, na_rep = 'N/A') )
 st.caption('_Click the right top corner for the full view of the table_')
 # Download
 csv = convert_df(info2show)
