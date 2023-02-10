@@ -78,7 +78,7 @@ else:
             b['Variant_Classification'] = ['WT'] * len(info2show)
         else:
             b = dt.T[[i for i in ct_sel if i in list(dt.index.unique()) ]].T.reset_index()
-            b = b.drop('Tumor group2', axis = 1).reset_index().groupby(['PatientID']).first() 
+            b = b.drop('Tumor group2', axis = 1).groupby(['PatientID']).first() 
         b.index = b.index.astype(str)
         info2show.index = info2show.index.astype(str)
         info2show = pd.concat([info2show,b], axis = 1)
