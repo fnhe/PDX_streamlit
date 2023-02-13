@@ -28,14 +28,14 @@ PatientID	Sample Sources	Gender	Age(year)	Race	Ethnicity	Engraftment time (weeks
 1739	UTSW	Male	2	White	Non-Hispanic	12.0	No treatment	Hepatoblastoma	Hepatoblastoma	P	primary		Liver		Liver		Needle core biopsy	crowded fetal, embryonal, ductal	PT-PDX
 1753	UTSW	Male	10	Black or AA	Non-Hispanic	32.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary	saliva	Pelvis, NOS		Pelvis, NOS		Surgical resection	triphasic Wilms	PT-PDX
 1754	UTSW	Male	1	White	Non-Hispanic	33.5	No treatment	Clear Cell Sarcoma	Clear Cell Sarcoma	P	primary	blood	Kidney, NOS	Right	Kidney, NOS	Right	Surgical resection	ccsk	PT-PDX
-1763	UTSW	Female	1	Black or AA	Non-Hispanic	14.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary		Kidney, NOS	Left	Kidney, NOS	Left	Surgical resection	triphasic Wilms	PT-PDX
+1763	UTSW	Female	1	Black or AA	Non-Hispanic	14.0	Chemotherapy	Wilms Tumor	Wilms Tumor	P	primary		Kidney, NOS	Left	Kidney, NOS	Left	Surgical resection	triphasic Wilms	PT-PDX
 1792	UTSW	Female	17	White	Hispanic	7.0	Chemotherapy	Osteosarcoma	Osteosarcoma	P	primary	blood	femur	left	Lung, NOS	Left	surgical resection		PT-PDX
 1795	UTSW	Male	17	White	Hispanic	13.0	No treatment	Germ Cell Tumor	Germ Cell Tumor	P	primary	blood	Testis, NOS	Right	Testis, NOS	Right	Surgical resection		PT-PDX
 1796	UTSW	Female	16	Black or AA	Non-Hispanic	6.5	No treatment	Leydig Cell Tumor	Other Tumor	P	primary	blood	Ovary	Right	Ovary	Right	Surgical resection		PT-PDX
 1823	UTSW	Female	5	White	Non-Hispanic	22.5	No treatment	Wilms Tumor	Wilms Tumor	P	primary	blood	Kidney, NOS	Right	Kidney, NOS	Right	Surgical resection		PT-PDX
 1826	UTSW	Male	14	White	Hispanic	16.0	No treatment	Germ Cell Tumor	Germ Cell Tumor	P	primary	blood	Testis, NOS	Left	Testis, NOS	Left	Surgical resection		PT-PDX
 1853	UTSW	Female	0	Black or AA	Non-Hispanic	38.0	Chemotherapy	Neuroblastoma	Neuroblastoma	P	primary		Mediastinum, NOS		Mediastinum, NOS		Surgical resection		PDX only
-1907	UTSW	Female	5	White	Non-Hispanic	7.5	Chemotherapy	Pleomorphic Sarcoma	Other Sarcoma	P	primary		Frontal lobe	Right	Frontal lobe	Right	Surgical resection		PT-PDX
+1907	UTSW	Female	5	White	Non-Hispanic	7.5	radiation	Pleomorphic Sarcoma	Other Sarcoma	P	primary		Frontal lobe	Right	Frontal lobe	Right	Surgical resection		PT-PDX
 1912	UTSW	Female	3	White	Hispanic	17.0	No treatment	Wilms Tumor	Wilms Tumor	P	primary		Kidney, NOS	Right	Kidney, NOS	Right	Surgical resection		PDX only
 1913	UTSW	Male	5	White	Non-Hispanic	46.0	No treatment	Neuroblastoma	Neuroblastoma	P	primary	blood	Adrenal gland, NOS	Left	Adrenal gland, NOS	Left	Surgical resection		PT-PDX
 1917	UTSW	Male	17	White	Hispanic	8.0	No treatment	Germ Cell Tumor	Germ Cell Tumor	P	primary		Testis, NOS	Right	Testis, NOS	Right	Surgical resection	Consistent with yolk sac tumor	PDX only
