@@ -99,7 +99,7 @@ sns.despine()
 
 ylim = st.slider(
     'Select a TPM range of y-axis',
-    0.0, 100.0, (0.0, round(float(ax1.get_ylim()[1]), 1)) )
+    0.0, 100.0, (0.0, round(float(ax1.get_ylim()[1]), 1)), step = 0.1 )
 ax1.set_ylim(ylim)
 ax2.set_ylim(ylim)
 st.pyplot(fig)
