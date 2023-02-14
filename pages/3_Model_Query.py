@@ -96,7 +96,7 @@ else:
         info2show = info2show.fillna(np.nan)
     info2show = info2show.reset_index()
     info2show.columns = ['PatientID', 'Cancer'] + list(info2show.columns[2:-1]) + [gene_sel+'(TPM)']
-    st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel+'(TPM)': '{:.1f}'}, na_rep = 'N/A') )
+    st.dataframe( info2show.style.format({'Age(year)': '{:.1f}', gene_sel+'(TPM)': '{:.1f}'}, na_rep = 'NA') )
 st.caption('_Click the right top corner for the full view of the table_')
 # Download
 csv = convert_df(info2show.fillna('NA'))
