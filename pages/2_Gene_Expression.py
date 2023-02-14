@@ -14,7 +14,7 @@ color_ranking_palette = [ f(.6), f(.8), f(.3), h(.6), b(.6), a(.6), h(.2), e(.6)
 color_ranking_dict = {'Osteosarcoma':  f(.6),  'Clear Cell Sarcoma':f(.8), 'Other Sarcoma':f(.3),  'Wilms Tumor': h(.6), 'Hepatoblastoma':b(.6),
                      'Germ Cell Tumor': a(.6),   'Neuroblastoma':h(.2), 'Other Tumor': e(.6)}
 def plot_box_with_ax_datatype1(dt, X, Y, ax):
-    cancer_ranking1 = dt.groupby(X).median().sort_values(Y, ascending=True).index
+    cancer_ranking1 = dt.groupby(X).median(numeric_only=True).sort_values(Y, ascending=True).index
     color_ranking1 = [color_ranking_palette[cancer_ranking_all.index(i)]  for i in cancer_ranking1 ]
 
 
@@ -36,10 +36,9 @@ def plot_box_with_ax_datatype1(dt, X, Y, ax):
     p.set_xticklabels(cancer_ranking1,  ha='right', rotation_mode='anchor', rotation = 45)
     p.set_xlabel('')
     sns.despine()
-    p.legend(bbox_to_anchor = (1,1), frameon=False)
     
 def plot_box_with_ax_datatype2(dt, X, Y, ax):
-    cancer_ranking1 = dt.groupby(X).median().sort_values(Y, ascending=True).index
+    cancer_ranking1 = dt.groupby(X).median(numeric_only=True).sort_values(Y, ascending=True).index
     color_ranking1 = [color_ranking_palette[cancer_ranking_all.index(i)]  for i in cancer_ranking1 ]
 
 
@@ -58,7 +57,6 @@ def plot_box_with_ax_datatype2(dt, X, Y, ax):
     p.set_xticklabels(cancer_ranking1,  ha='right', rotation_mode='anchor', rotation = 45)
     p.set_xlabel('')
     sns.despine()
-    p.legend(bbox_to_anchor = (1,1), frameon=False)
 
 indir = './raw_data'
 exp = pd.read_table(indir + '/exp.tpm.txt', index_col = 0)
@@ -99,7 +97,7 @@ sns.despine()
 
 ylim = st.slider(
     'Select a TPM range of y-axis',
-    0.0, 100.0, (0.0, round(float(ax1.get_ylim()[1]), 1)), step = 0.1 )
+    0.0, 10.0, (0.0, round(float(ax1.get_ylim()[1]), 1)), step = 0.1 )
 ax1.set_ylim(ylim)
 ax2.set_ylim(ylim)
 st.pyplot(fig)
