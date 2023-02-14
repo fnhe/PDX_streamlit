@@ -101,5 +101,5 @@ else:
     st.dataframe(info2show)
 st.caption('_Click the right top corner for the full view of the table_')
 # Download
-csv = convert_df(info2show.fillna('NA'))
+csv = convert_df(info2show)
 st.download_button("Download", csv, "file.csv", "text/csv", key='download-csv')
