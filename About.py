@@ -16,7 +16,7 @@ st.write('Patient-Derived Xenografts (PDX) are an important tool for developing 
 
 st.write('We have created :blue[pstPDX] portal to share this resource with the community. On the portal users can query and request PDXs. The gene expression page also allows users to compare the expression of a gene across cancer types. ')
 
-st.write('The raw sequencing data are available at EGA (EGAS00001006710). The processed data, including identified clinical data, mutations, copy number, and gene expression can be found on synapse ([syn35811916](https://www.synapse.org/#!Synapse:syn35811916/files/)). ')
+st.write('The raw sequencing data are available at EGA ([EGAS00001006710](https://ega-archive.org/studies/EGAS00001006710])). The processed data, including identified clinical data, mutations, copy number, and gene expression can be found on synapse ([syn35811916](https://www.synapse.org/#!Synapse:syn35811916/files/)). ')
 
 st.write('- Request for PDX data (mutations/expression) can be made on the [Model Query](https://pstpdx.streamlit.app/Model_Query) page.')
 st.write('- Request PDX tissue for research purpose can be made on the [Request](https://pstpdx.streamlit.app/Request) page.')
