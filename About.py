@@ -21,3 +21,4 @@ st.write('The raw sequencing data are available at EGA ([EGAS00001006710](https:
 st.write('- Request for PDX data (mutations/expression) can be made on the [Model Query](https://pstpdx.streamlit.app/Model_Query) page.')
 st.write('- Request PDX tissue for research purpose can be made on the [Request](https://pstpdx.streamlit.app/Request) page.')
 st.write('- Any questions about the portal should be directed to :blue[zhenglab@uthscsa.edu]. We will provide feedback in 3-5 business days upon receipt of the request. ')
+uploaded_file = st.file_uploader("google3ecd918b08f5ece9.html")
