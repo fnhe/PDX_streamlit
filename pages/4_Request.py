@@ -3,7 +3,7 @@ import smtplib
 
 sender  = 'streamlit2fnhe@gmail.com'
 password = 'vvljquqzjrqleduy' 
-receiver = 'lalalaxf93@gmail.com'
+receiver = 'cprit_tpct@uthscsa.edu'
 
 def send_email(to, subject, message): #This function was generate from ChatGPT
     try:
