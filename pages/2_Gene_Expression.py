@@ -14,7 +14,7 @@ color_ranking_palette = [ f(.6), f(.8), f(.3), h(.6), b(.6), a(.6), h(.2), e(.6)
 color_ranking_dict = {'Osteosarcoma':  f(.6),  'Clear Cell Sarcoma':f(.8), 'Other Sarcoma':f(.3),  'Wilms Tumor': h(.6), 'Hepatoblastoma':b(.6),
                      'Germ Cell Tumor': a(.6),   'Neuroblastoma':h(.2), 'Other Tumor': e(.6)}
 def plot_box_with_ax_datatype1(dt, X, Y, ax):
-    cancer_ranking1 = dt.groupby(X).median().sort_values(Y, ascending=True).index
+    cancer_ranking1 = dt.groupby(X)[[gene_sel]].median().sort_values(Y, ascending=True).index
     color_ranking1 = [color_ranking_palette[cancer_ranking_all.index(i)]  for i in cancer_ranking1 ]
 
 
@@ -38,7 +38,7 @@ def plot_box_with_ax_datatype1(dt, X, Y, ax):
     sns.despine()
     
 def plot_box_with_ax_datatype2(dt, X, Y, ax):
-    cancer_ranking1 = dt.groupby(X).median().sort_values(Y, ascending=True).index
+    cancer_ranking1 = dt.groupby(X)[[gene_sel]].median().sort_values(Y, ascending=True).index
     color_ranking1 = [color_ranking_palette[cancer_ranking_all.index(i)]  for i in cancer_ranking1 ]
 
 
