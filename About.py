@@ -23,4 +23,4 @@ st.write('- Request PDX tissue for research purpose can be made on the [Request]
 st.write('- Any questions about the portal should be directed to :blue[zhenglab@uthscsa.edu]. We will provide feedback in 3-5 business days upon receipt of the request. ')
 
 st.write('**Citation:**')
-st.write('[He, F., Bandyopadhyay, A.M., Klesse, L.J. et al. Genomic profiling of subcutaneous patient-derived xenografts reveals immune constraints on tumor evolution in childhood solid cancer. Nat Commun 14, 7600 (2023). https://doi.org/10.1038/s41467-023-43373-1]')
+st.write('He, F., Bandyopadhyay, A.M., Klesse, L.J. et al. Genomic profiling of subcutaneous patient-derived xenografts reveals immune constraints on tumor evolution in childhood solid cancer. Nat Commun 14, 7600 (2023). https://doi.org/10.1038/s41467-023-43373-1')
