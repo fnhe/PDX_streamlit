@@ -21,3 +21,6 @@ st.write('The raw sequencing data are available at EGA ([EGAS00001006710](https:
 st.write('- Request for PDX data (mutations/expression) can be made on the [Model Query](https://pstpdx.streamlit.app/Model_Query) page.')
 st.write('- Request PDX tissue for research purpose can be made on the [Request](https://pstpdx.streamlit.app/Request) page.')
 st.write('- Any questions about the portal should be directed to :blue[zhenglab@uthscsa.edu]. We will provide feedback in 3-5 business days upon receipt of the request. ')
+
+st.write('**Citation:**')
+st.write([He, F. et al. Genomic profiling of subcutaneous patient-derived xenografts reveals immune constraints on tumor evolution in childhood solid cancer. Nat Commun 14, 7600 (2023)](https://www.nature.com/articles/s41467-023-43373-1))
